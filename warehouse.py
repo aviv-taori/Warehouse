@@ -15,6 +15,7 @@ class ManagementSystem(object):
         self.users.append(user)
 
     def print_users_info(self):
+        print(len(self.users))
         for user in self.users:
             print(f"Username: {user.username}")
             print(f"Password: {user.password}")
