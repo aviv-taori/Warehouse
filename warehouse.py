@@ -14,11 +14,15 @@ class Warehouse:
 
     def show_products(self):
         for product in self.products:
-            print(product)
+            print("Name product: " + product.name, "The price: " + str(product.price),
+                  "The count :" + str(product.count))
+
+
 
     def search_product(self, product_name):
         if product_name in self.products:
-            print(product_name)
+            print("Name product: " + product_name.name, "The price: " + str(product_name.price),
+                  "The count :" + str(product_name.count))
             print(self.products.index(product_name))
 
     # def update_product(self, product, new_price, new_info):

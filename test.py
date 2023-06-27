@@ -7,10 +7,12 @@ from milk import *
 from meat import *
 from bread import *
 from drinks import *
+from manager import *
 
 
+print("users")
 
-def main():
+def user1():
     yesh = ManagementSystem()
     a = User("a","b",123,555)
     b = User("b", "b", 123, 555)
@@ -18,30 +20,64 @@ def main():
     yesh.add_users(b)
     print(yesh.show_users())
     yesh.print_users_info()
+
+    mang = Manager("BB",111,222,a)
+    print()
+
+    mang.add_employer(b)
+
+    mang.print_manager_info()
+
+user1()
+
+print("products")
+
+def product1():
     a1 = Warehouse("aaa")
 
-    milk1 = Milk("3%",22,57)
+    milk1 = Milk("3%", 22, 57)
     milk1.print_product()
-    milk2 = Milk("5%", 22,58)
+    milk2 = Milk("5%", 22, 58)
     milk2.print_product()
+
+    a1.add_product(milk1)
+    a1.add_product(milk2)
     print()
 
-    meat1 = Meat("red%", 22,66)
+    meat1 = Meat("red%", 22, 66)
     meat1.print_product()
-    meat2 = Meat("reddd%", 22,67)
+    meat2 = Meat("reddd%", 22, 67)
     meat2.print_product()
+
+    a1.add_product(meat1)
+    a1.add_product(meat2)
     print()
 
-    bread1 = Bread("white", 8,77)
+    bread1 = Bread("white", 8, 77)
     bread1.print_product()
-    bread2 = Bread("brown", 16,78)
+    bread2 = Bread("brown", 16, 78)
     bread2.print_product()
+
+    a1.add_product(bread1)
+    a1.add_product(bread2)
     print()
 
-    drink1 = Drinks("coca", 9,55)
+    drink1 = Drinks("coca", 9, 55)
     drink1.print_product()
-    drink2 = Drinks("pepsi", 7,56)
+    drink2 = Drinks("pepsi", 7, 56)
     drink2.print_product()
+
+    a1.add_product(drink1)
+    a1.add_product(drink2)
     print()
 
-main()
+    a1.show_products()
+    a1.delete_product(drink1)
+    print()
+
+    a1.show_products()
+    print()
+
+    a1.search_product(bread2)
+
+# product1()
