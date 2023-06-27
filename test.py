@@ -8,14 +8,18 @@ from meat import *
 from bread import *
 from drinks import *
 from manager import *
+from storekeeper import *
+from headCashier import *
+
 
 
 print("users")
 
 def user1():
     yesh = ManagementSystem()
-    a = User("a","b",123,555)
-    b = User("b", "b", 123, 555)
+    a = Storekeeper("a",123,555)
+    b = HeadCashier("b", 123, 555)
+    c = Storekeeper("A",11,22)
     yesh.add_users(a)
     yesh.add_users(b)
     print(yesh.show_users())
