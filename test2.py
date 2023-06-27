@@ -13,31 +13,24 @@ from headcashier import *
 
 
 
-print("users")
 
-def user1():
+def main():
     yesh = ManagementSystem()
-    a = Storekeeper("a",123,555)
+    a = Storekeeper("a", 123, 555)
     b = HeadCashier("b", 123, 555)
-    c = Storekeeper("A",11,22)
+    c = Storekeeper("A", 11, 22)
     yesh.add_users(a)
     yesh.add_users(b)
     print(yesh.show_users())
     yesh.print_users_info()
 
-    mang = Manager("BB",111,222,a)
+    mang = Manager("BB", 111, 222, a)
     print()
 
     mang.add_employer(b)
 
     mang.print_manager_info()
 
-
-user1()
-
-print("products")
-
-def product1():
     a1 = Warehouse("aaa")
 
     milk1 = Milk("3%", 22, 57)
@@ -85,6 +78,9 @@ def product1():
 
     a1.search_product(bread2)
 
-product1()
+    #a.storekeeper_search(bread2)
 
 
+
+
+main()
