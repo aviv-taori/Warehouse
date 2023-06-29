@@ -3,12 +3,19 @@ from users import *
 class Manager(User):
     def __init__(self, username, password, id, employers = None):
         super().__init__(self, username, password, id)
+        self.username = username
         self.usertype = "manager"
         self.employers = []
         if employers == None:
             self.employers = []
         else:
             self.employers.append(employers)
+
+    def __str__(self):
+        return "name:" + self.username + ", password: " + str(self.password) + " type: " + self.usertype +" id: "+ str(self.id)  + " Number of em employers:" + str(len(self.employers))
+
+
+
 
     def add_employer(self,employer):
         if employer not in self.employers:

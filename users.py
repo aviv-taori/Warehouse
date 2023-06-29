@@ -1,5 +1,6 @@
 #2
 from management import *
+from product import *
 
 
 class User():
