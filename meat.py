@@ -8,7 +8,7 @@ class Meat(Product):
         self.price = price
         self.count = count
 
-    def print_product(self):
-        print("Category:", Meat.name, ",Name product: " + self.name, "The price: " + str(self.price),
-              "The count :" + str(self.count))
+    def __str__(self):
+        return "Category:" + Meat.name + ", Name product: " + self.name + " The price: " + str(
+            self.price) + " The count :" + str(self.count)
 

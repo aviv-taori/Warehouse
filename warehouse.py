@@ -25,6 +25,5 @@ class Warehouse:
                   "The count :" + str(product_name.count))
             print(self.products.index(product_name))
 
-    # def update_product(self, product, new_price, new_info):
-    #     product.price = new_price
-    #     product.info = new_info
+
+    

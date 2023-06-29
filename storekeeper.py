@@ -1,5 +1,5 @@
 from users import *
-from warehouse import *
+
 
 class Storekeeper(User):
     def __init__(self, username, password, id):

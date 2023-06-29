@@ -78,7 +78,7 @@ def main():
 
     a1.search_product(bread2)
 
-    #a.storekeeper_search(bread2)
+    a.storekeeper_search(bread2)
 
 
 

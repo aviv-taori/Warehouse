@@ -10,6 +10,8 @@ class Manager(User):
         else:
             self.employers.append(employers)
 
+
+
     def add_employer(self,employer):
         if employer not in self.employers:
             self.employers.append(employer)
