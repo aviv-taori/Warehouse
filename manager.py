@@ -1,15 +1,15 @@
 from users import *
 
 class Manager(User):
-    def __init__(self, username, password, id, employers = None):
+    def __init__(self, username, password, id, employees = None):
         super().__init__(self, username, password, id)
         self.username = username
         self.usertype = "manager"
         self.employees = []
-        if employers == None:
+        if employees == None:
             self.employees = []
         else:
-            self.employees.append(employers)
+            self.employees.append(employees)
 
 
 
@@ -29,7 +29,7 @@ class Manager(User):
         print(f"Username: {self.username}", f"Password: {self.password}"
               , f"usertype: {self.usertype}", f"id: {self.id}")
 
-        print( "\nThe employees")
+        print( f"\nThe employees of {self.username}", )
         for employee in self.employees:
             print(f"Username: {employee.username}", f"Password: {employee.password}"
                   , f"usertype: {employee.usertype}", f"id: {employee.id}")
