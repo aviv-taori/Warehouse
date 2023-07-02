@@ -1,14 +1,11 @@
-from management import *
 
-class Product(ManagementSystem):
-    def __init__(self, name, price): #, barcode, expiry_date, manufacturer, supplier,kind):
+
+class Product():
+    def __init__(self, name, price, count):
         self.name = name
         self.price = price
-        # self.barcode = barcode
-        # self.expiry_date = expiry_date
-        # self.manufacturer = manufacturer
-        # self.supplier = supplier
-        # self.kind = kind
+        self.count = count
+
 
 
     def update_price(self, new_price):
@@ -16,3 +13,4 @@ class Product(ManagementSystem):
 
     def print_product(self):
         print(self.name ,self.price)
+

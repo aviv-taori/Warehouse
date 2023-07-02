@@ -27,7 +27,7 @@ def main():
     mang = Manager("BB", 111, 222, a)
     print()
 
-    mang.add_employer(b)
+    mang.add_employee(b)
 
     mang.print_manager_info()
 
@@ -76,10 +76,12 @@ def main():
     a1.show_products()
     print()
 
-    #a1.search_product(bread2)
+    a1.search_product(bread2)
 
-    # a.storekeeper_search(bread2)
-    # b.headcashier_search(bread2)
+    a.search_storekeeper(a1,bread1)
+    print()
+
+    b.headcashier_show(a1)
 
 
 

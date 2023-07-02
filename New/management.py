@@ -6,7 +6,7 @@ class ManagementSystem(object):
         self.warehouses = []
         self.users = []
 
-    def show_Warehouses(self):
+    def show_warehouses(self):
         return len(self.warehouses)
 
     def show_users(self):
@@ -19,13 +19,10 @@ class ManagementSystem(object):
         self.warehouses.append(warehouse)
 
     def print_users_info(self):
-        print(len(self.users))
+        # print(len(self.users))
         for user in self.users:
-            print(f"Username: {user.username}")
-            print(f"Password: {user.password}")
-            print(f"usertype: {user.usertype}")
-            print(f"id: {user.id}")
-            print()
+            print(f"Username: {user.username}", f"Password: {user.password}", f"usertype: {user.usertype}", f"id: {user.id}" )
+
 
     def print_warehouse_info(self):
         print(len(self.warehouses))

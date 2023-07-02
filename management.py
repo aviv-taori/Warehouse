@@ -6,7 +6,7 @@ class ManagementSystem(object):
         self.warehouses = []
         self.users = []
 
-    def show_Warehouses(self):
+    def show_warehouses(self):
         return len(self.warehouses)
 
     def show_users(self):

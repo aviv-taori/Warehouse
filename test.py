@@ -28,7 +28,7 @@ def user1():
     mang = Manager("BB",111,222,a)
     print()
 
-    mang.add_employer(b)
+    mang.add_employee(b)
 
     mang.print_manager_info()
 

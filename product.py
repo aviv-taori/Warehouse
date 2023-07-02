@@ -1,6 +1,6 @@
-from management import *
 
-class Product(ManagementSystem):
+
+class Product():
     def __init__(self, name, price, count):
         self.name = name
         self.price = price
